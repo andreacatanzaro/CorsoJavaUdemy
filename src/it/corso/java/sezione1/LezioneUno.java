@@ -109,7 +109,12 @@ public class LezioneUno {
          *              Cosa rappresenta: valori VERO o FALSO (True o False)
          *              Memoria utilizzata: non specificato (sarebbe sufficiente un solo bit)
          *              Valore di default: False
-         *
+         */
+
+        boolean variabileBoolean = true;
+        // variabile di tipo BOOLEAN (true o false)
+
+        /**
          *          BYTE
          *              Cosa rappresenta: valori interi compresi tra -128 e 127 (inclusi). Questo tipo di dato viene
          *                                usato per risparmiare memoria in Array di grandi dimensioni, poiché una var
@@ -117,15 +122,23 @@ public class LezioneUno {
          *                                tipo aritmetico (+, -, *, /) NON SONO AMMESSE.
          *              Memoria utilizzata: 8 bit
          *              Valore di default: 0
-         *
-         *          CHAR
+         */
+
+        byte variabileByte = 127;
+        // variabile di tipo BYTE (non sono ammesse operazioni aritmetiche)
+
+        /**          CHAR
          *              Cosa rappresenta: è un carattere UNICODE (sistema di codifica che assegna un numero univoco a
          *                                ogni carattere utilizzato per la scrittura di testi). Il valore più piccolo è
          *                                \u0000 (ovvero 0), il più grande è \uffff (ovvero 65535).
          *              Memoria utilizzata: 16 bit
          *              Valore di default: \u0000 (ovvero 0)
-         *
-         *          DOUBLE
+         */
+
+        char variabileChar = 'A';
+        // variabile di tipo CHAR (unico carattere entro singoli apici)
+
+        /**          DOUBLE
          *              Cosa rappresenta: numeri in virgola mobile (cioè numeri reali) con precisione doppia secondo la
          *                                specifica IEEE 745. La precisione con cui sono rappresentati i numeri è più
          *                                alta del FLOAT perche sono utilizzati 64 bit al posto di 32 bit. Il più grande
@@ -135,8 +148,12 @@ public class LezioneUno {
          *                                DOUBLE non dovrebbe essere utilizzato per valori precisi, i.e. Le valute.
          *              Memoria utilizzata: 64 bit
          *              Valore di default: 0.0d (ovvero 0 DOUBLE)
-         *
-         *          FLOAT
+         */
+
+        double variabileDouble = -45.3;
+        // variabile di tipo DOUBLE (non è necessaria la "d" finale)
+
+        /**          FLOAT
          *              Cosa rappresenta: numeri in virgola mobile (cioè numeri reali) con precisione singola secondo la
          *                                specifica IEEE 754. Il più grande float positivo è 3.40282347e+38f, mentre il
          *                                più piccolo positivo non-zero è 1.40239846e-45f.
@@ -144,62 +161,54 @@ public class LezioneUno {
          *                                esempio le valute (in questi casi esistono la classe java.math.BigDecimal)
          *              Memoria utilizzata: 32 bit
          *              Valore di default: 0.0f (ovvero 0 FLOAT)
-         *
-         *          INT
+         */
+
+        float variabileFloat = 45.3F;
+        // variabile di tipo FLOAT (è necessaria la "F" finale)
+
+        /**          INT
          *              Cosa rappresenta: valori interi compresi tra -2.147.483.648 e 2.147.483.647 (inclusi). È il
          *                                tipo di dato utilizzato per i valori interi (tranne in caso di problemi di
          *                                disponibilità di memoria).
          *                                Sui tipi int le operazioni aritmetiche (+ - * /) SONO AMMESSE.
          *              Memoria utilizzata: 32 bit
          *              Valore di default: 0
-         *
-         *          LONG
+         */
+
+        int variabileInteger = 6000;
+        // variabile di tipo INT
+
+        /**          LONG
          *              Cosa rappresenta: valori interi compresi tra -9.223.372.036.854.775.808 e 9.223.372.036.854.775.
          *                                807 (inclusi). È il tipo di dato utilizzato quando si lavora con interi di
          *                                grandi dimensioni.
          *                                Sui long int le operazioni aritmetiche (+ - * /) SONO AMMESSE.
          *              Memoria utilizzata: 64 bit
          *              Valore di default: 0L (ovvero 0 LONG)
-         *
-         *          SHORT
+         */
+
+        long variabileLong = 34L;
+        // variabile di tipo LONG (è necessaria la "L" finale)
+
+        /**          SHORT
          *              Cosa rappresenta: valori interi compresi tra -32768 e 32767 (inclusi). Come il byte, questo tipo
          *                                di dato può essere usato per risparmiare memoria in array di grandi dimensioni
          *                                poiché una variabile short è due volte più piccola di una int.
          *                                Sui tipi short le operazioni aritmetiche (+ - * /) NON SONO AMMESSE.
          *              Memoria utilizzata: 16 bit
          *              Valore di default: 0
-         *
-         *      [TIPI DI RIFERIMENTO]
+         */
+
+        short variabileShort = 4562;
+        // variabile di tipo SHORT
+
+        /**      [TIPI DI RIFERIMENTO]
          *      Possono essere diversi (classi, interfacce, ...) e utilizzano una quantità di memoria variabile in
          *      funzione del numero di informazioni contenute (ad esempio un oggetto di tipo Indirizzo occupa memoria
          *      in base alle informazioni VIA, CAP, CITTA, ...). Ogni variabile di questo tipo viene inizializzata per
          *      default con il valore speciale NULL.
          *
          */
-
-        boolean variabileBoolean = true;
-            // variabile di tipo BOOLEAN (true o false)
-
-        byte variabileByte = 127;
-            // variabile di tipo BYTE (non sono ammesse operazioni aritmetiche)
-
-        char variabileChar = 'A';
-            // variabile di tipo CHAR (unico carattere entro singoli apici)
-
-        double variabileDouble = -45.3;
-            // variabile di tipo DOUBLE (non è necessaria la "d" finale)
-
-        float variabileFloat = 45.3F;
-            // variabile di tipo FLOAT (è necessaria la "F" finale)
-
-        int variabileInteger = 6000;
-            // variabile di tipo INT
-
-        long variabileLong = 34L;
-            // variabile di tipo LONG (è necessaria la "L" finale)
-
-        short variabileShort = 4562;
-            // variabile di tipo SHORT
 
     }
 }
